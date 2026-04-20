@@ -13,8 +13,15 @@ df['Duration'] = (df['End date'] - df['Start date']).dt.days
 df['Year'] = df['Start date'].dt.year
 df['Month'] = df['Start date'].dt.month
 
-# Sidebar
-st.sidebar.header("Filters")
+# User profile
+st.sidebar.title("User Profile")
+st.sidebar.write("Nwasi Victor Obinna")
+st.sidebar.write("Data Analyst")
+
+st.sidebar.divider()
+
+# Filters
+st.sidebar.header("filters")
 
 # State selection
 states = st.sidebar.multiselect(
